@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HANKET — India’s AI-powered fashion marketplace. From Shoot to Sale for fashion, beauty & handloom brands." />
+  <title>HANKET — India’s AI-Powered Fashion Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Josefin+Sans:wght@300;400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="hk-page">
+  <div class="page">
+    <header class="site-header hk-site-header">
+      <div class="container header-inner">
+        <div class="header-start">
+          <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
+            <span class="hamburger" aria-hidden="true">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </span>
+          </button>
+          <nav class="nav-desktop" aria-label="Main">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#marketplace">Marketplace</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#ai-platform">AI: Shoot to Sale</a></li>
+              <li><a href="#sellers">Sell on HANKET</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="#" class="logo hk-logo-mark" aria-label="HANKET">HANKET</a>
+        <div class="header-tools">
+          <a href="#" class="tool-link hk-desktop-only">Login / Register</a>
+          <button type="button" class="icon-btn search-btn hk-desktop-only" aria-label="Search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3-3" /></svg>
+          </button>
+          <a href="#" class="icon-btn hk-desktop-only" aria-label="Wishlist"><span class="badge">0</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+          </a>
+          <a href="#" class="icon-btn hk-header-cart-mobile hk-mobile-only" aria-label="Shopping cart">
+            <span class="badge cart-count">0</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8h15l-1.5 9h-12z" /><circle cx="9" cy="20" r="1.5" /><circle cx="17" cy="20" r="1.5" /><path d="M6 8L5 3H2" /></svg>
+          </a>
+          <a href="#" class="cart-link hk-desktop-only"><span class="cart-count">0</span> items / <span class="cart-total">₹0.00</span></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- WoodMart-style mobile drawer: wd-side-hidden wd-left (sourcecode.txt) -->
+    <div id="hk-mobile-drawer" class="hk-mobile-drawer" aria-hidden="true">
+      <button type="button" class="hk-mobile-drawer__backdrop" aria-label="Close menu" tabindex="-1"></button>
+      <aside
+        id="mobile-nav-panel"
+        class="hk-mobile-drawer__panel mobile-nav wd-left"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
+      >
+        <div class="hk-mobile-drawer__search wd-search-form">
+          <form class="hk-mobile-search-form" role="search" action="#" method="get">
+            <input
+              type="search"
+              class="hk-mobile-search-input"
+              name="s"
+              placeholder="Search for products"
+              autocomplete="off"
+              aria-label="Search for products"
+            />
+            <button type="submit" class="hk-mobile-search-submit">Search</button>
+          </form>
+        </div>
+
+        <ul class="hk-mobile-tab-nav wd-nav wd-nav-mob-tab" role="tablist">
+          <li class="hk-mobile-tab-title" role="presentation">
+            <button type="button" class="hk-mobile-tab is-active" role="tab" aria-selected="true" data-hk-tab="menu">
+              <span class="nav-link-text">Menu</span>
+            </button>
+          </li>
+          <li class="hk-mobile-tab-title" role="presentation">
+            <button type="button" class="hk-mobile-tab" role="tab" aria-selected="false" data-hk-tab="categories">
+              <span class="nav-link-text">Categories</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="hk-mobile-tab-panels">
+          <div id="hk-mobile-panel-menu" class="hk-mobile-panel is-active" role="tabpanel" data-hk-panel="menu">
+            <ul id="menu-mobile-menu" class="menu wd-nav wd-nav-mobile hk-mobile-pages-menu">
+              <li class="menu-item"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a></li>
+              <li class="menu-item"><a href="#marketplace" class="woodmart-nav-link"><span class="nav-link-text">Explore Marketplace</span></a></li>
+              <li class="menu-item"><a href="#ai-platform" class="woodmart-nav-link"><span class="nav-link-text">AI: Shoot to Sale</span></a></li>
+              <li class="menu-item"><a href="#sellers" class="woodmart-nav-link"><span class="nav-link-text">Sell on HANKET</span></a></li>
+              <li class="menu-item"><a href="#contact" class="woodmart-nav-link"><span class="nav-link-text">Contact HANKET</span></a></li>
+              <li class="menu-item menu-item-account"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Login / Register</span></a></li>
+            </ul>
+          </div>
+          <div id="hk-mobile-panel-categories" class="hk-mobile-panel" role="tabpanel" hidden data-hk-panel="categories">
+            <ul id="menu-mobile-categories" class="menu wd-nav wd-nav-mobile mobile-categories-menu hk-mobile-categories-menu">
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Men</span></a></li>
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Women</span></a></li>
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Wedding</span></a></li>
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Handloom</span></a></li>
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Beauty</span></a></li>
+              <li class="menu-item"><a href="#categories" class="woodmart-nav-link"><span class="nav-link-text">Lifestyle</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <main id="main-content">
+      <section class="hero-slider" aria-roledescription="carousel" aria-label="Featured">
+        <div class="slider-track">
+          <article class="slide is-active slide--w-col6" data-index="0" style="--slide-bg: url('https://woodmart.xtemos.com/wp-content/uploads/2021/06/slide-minimalist-1.jpg'); --slide-bg-pos-sm: -785px 0px;">
+            <div class="container slide-inner wd-slide-inner wd-anim-slide-from-right">
+              <div class="slide-content">
+                <p class="hero-slide-eyebrow wd-anim-el wd-anim-slide-from-left wd_delay_300">India’s marketplace OS</p>
+                <h1 class="slide-title hero-slide-title wd-underline-colored wd-anim-el wd-anim-slide-from-left wd_delay_350">India’s AI Powered Fashion Marketplace</h1>
+                <p class="slide-text hero-slide-lead wd-anim-el wd-anim-slide-from-left wd_delay_400">From Shoot to Sale — helping fashion, beauty &amp; handloom brands grow online.</p>
+                <div class="slide-cta-row hero-slide-cta wd-anim-el wd-anim-slide-from-left wd_delay_450">
+                  <a class="btn btn-hk-primary btn-shop" href="#marketplace">Explore Marketplace</a>
+                  <a class="btn btn-woodmart-black btn-shop" href="#sellers">Join as Seller</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="slide slide--minimal slide--w-col6" data-index="1" style="--slide-bg: url('https://woodmart.xtemos.com/wp-content/uploads/2021/06/w-minimalism-slider-2.jpg'); --slide-bg-pos-sm: -715px 65px;">
+            <div class="container slide-inner wd-slide-inner wd-anim-slide-from-right">
+              <div class="slide-content">
+                <h2 class="slide-title wd-underline-colored wd-anim-el wd-anim-slide-from-left wd_delay_350">AI Shoot to Sale</h2>
+                <p class="slide-text woodmart-text-block wd-anim-el wd-anim-slide-from-left wd_delay_400">Product shoot, catalog, branding and online selling — all in one platform built for Indian sellers.</p>
+                <div class="slide-cta-row wd-anim-el wd-anim-slide-from-left wd_delay_450">
+                  <a class="btn btn-hk-primary btn-shop" href="#ai-platform">Learn the platform</a>
+                  <a class="btn btn-woodmart-black btn-shop" href="#contact">Contact HANKET</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="slide slide--w-col7" data-index="2" style="--slide-bg: url('https://woodmart.xtemos.com/wp-content/uploads/2021/06/minimalism-slider4.jpg'); --slide-bg-pos-sm: -870px 85px;">
+            <div class="container slide-inner wd-slide-inner wd-anim-slide-from-right">
+              <div class="slide-content">
+                <h2 class="slide-title wd-underline-colored wd-anim-el wd-anim-slide-from-left wd_delay_350">For brands &amp; handloom<br />that want scale</h2>
+                <p class="slide-text wd-anim-el wd-anim-slide-from-left wd_delay_400">Are you a fashion brand or handloom seller? Join HANKET marketplace and reach buyers nationwide.</p>
+                <div class="slide-cta-row wd-anim-el wd-anim-slide-from-left wd_delay_450">
+                  <a class="btn btn-hk-primary btn-shop" href="#sellers">Join as Seller</a>
+                  <a class="btn btn-woodmart-black btn-shop" href="#marketplace">Browse catalog</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="slider-pagination" role="tablist" aria-label="Slide">
+          <button type="button" class="pagin-dot is-active" aria-selected="true" aria-label="Slide 1"></button>
+          <button type="button" class="pagin-dot" aria-label="Slide 2"></button>
+          <button type="button" class="pagin-dot" aria-label="Slide 3"></button>
+        </div>
+      </section>
+
+      <section class="banners container" aria-label="Highlights">
+        <article class="promo-banner">
+          <div class="promo-media">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/03/banner_minimalism3.jpg" width="800" height="400" alt="" loading="lazy" />
+          </div>
+          <div class="promo-body">
+            <p class="promo-kicker">Men · Women · Lifestyle</p>
+            <h2 class="promo-title">Shop the marketplace</h2>
+            <a class="link-arrow" href="#marketplace">Explore picks</a>
+          </div>
+        </article>
+        <article class="promo-banner">
+          <div class="promo-media">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/03/banner_minimalism2.jpg" width="800" height="400" alt="" loading="lazy" />
+          </div>
+          <div class="promo-body">
+            <p class="promo-kicker">Wedding · Handloom</p>
+            <h2 class="promo-title">Occasion &amp; craft</h2>
+            <a class="link-arrow" href="#categories">View categories</a>
+          </div>
+        </article>
+        <article class="promo-banner">
+          <div class="promo-media">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/03/banner_minimalism1-1.jpg" width="800" height="400" alt="" loading="lazy" />
+          </div>
+          <div class="promo-body">
+            <p class="promo-kicker">Beauty · D2C brands</p>
+            <h2 class="promo-title">Discover more</h2>
+            <a class="link-arrow" href="#categories">See all</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="ai-platform" class="hk-vision-band">
+        <div class="container hk-vision-band__grid">
+          <div class="hk-vision-card" id="sellers">
+            <span class="hk-pill">Sellers</span>
+            <h2 class="hk-vision-card__title">Are you a fashion brand or handloom seller?</h2>
+            <p class="hk-vision-card__text">Join HANKET marketplace — list once, reach nationwide buyers, use tools built for Indian catalogs.</p>
+            <a class="btn btn-hk-primary" href="#contact">Join as Seller</a>
+          </div>
+          <div class="hk-vision-card hk-vision-card--dark">
+            <span class="hk-pill hk-pill--light">AI platform</span>
+            <h2 class="hk-vision-card__title">Shoot to Sale, in one stack</h2>
+            <p class="hk-vision-card__text">Product shoot, catalog, branding and online selling — all in one platform. This demo mirrors our marketplace vision, not a generic store skin.</p>
+            <a class="btn btn-woodmart-black" href="#marketplace">Explore Marketplace</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="hk-section hk-categories hk-categories--myntra" aria-labelledby="cat-section-title">
+        <div class="container">
+          <header class="hk-cat-head">
+            <p class="hk-cat-head__eyebrow">Shop by category</p>
+            <h2 id="cat-section-title" class="hk-cat-head__title">Men, Women, Wedding, Handloom, Beauty, Lifestyle</h2>
+            <p class="hk-cat-head__desc">A Myntra-style breadth of departments — curated for India&#39;s fashion and craft sellers on HANKET.</p>
+          </header>
+
+          <!-- Same-origin style CDN as rest of page — Unsplash often blocked / fails offline -->
+          <div class="hk-cat-strip-wrap" aria-label="Department shortcuts">
+            <ul class="hk-cat-strip" role="list">
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product6-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Men</span>
+                </a>
+              </li>
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product8-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Women</span>
+                </a>
+              </li>
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product5-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Wedding</span>
+                </a>
+              </li>
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product7-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Handloom</span>
+                </a>
+              </li>
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product2-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Beauty</span>
+                </a>
+              </li>
+              <li class="hk-cat-strip__item" role="listitem">
+                <a href="#" class="hk-cat-tile">
+                  <span class="hk-cat-tile__media">
+                    <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product4-430x490.jpg" width="215" height="245" alt="" loading="eager" decoding="async" />
+                  </span>
+                  <span class="hk-cat-tile__name">Lifestyle</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="marketplace" class="products-section container">
+        <div class="wd-title-wrap wd-title-style-simple">
+          <h2 class="featured-heading">Featured on HANKET</h2>
+          <p class="featured-sub">Curated listings — WoodMart-style grid, HANKET vision.</p>
+        </div>
+        <div class="products wd-products grid-columns-4 wd-grid-g wd-hover-prod-alt" style="--wd-col-lg: 4; --wd-col-md: 3; --wd-col-sm: 2; --wd-gap-lg: 20px; --wd-gap-sm: 10px">
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link product-image-link" tabindex="-1" aria-label="Linen blazer"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product8-430x490.jpg" alt="Linen blazer" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product8_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t">
+                  <button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button>
+                  <button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button>
+                  <button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button>
+                </div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Structured linen blazer</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Women</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements">
+                <span class="price"><span class="amount">₹4,299</span></span>
+                <div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Structured linen blazer"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div>
+              </div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product7-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product7_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Handloom silk drape</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Handloom</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹12,900</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Handloom silk drape"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product6-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product6_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Court leather sneakers</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Lifestyle</a> · <a href="#">Men</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹6,299</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Court leather sneakers"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product5-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product5_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Embroidered lehenga set</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Wedding Wear</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹38,500</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Embroidered lehenga set"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product2-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product2_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Barrier repair serum</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Beauty</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹1,890</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Barrier repair serum"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product3-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product3_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Minimal crossbody</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Women</a> · <a href="#">Lifestyle</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹3,450</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Minimal crossbody"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product4-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product4_2-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Sculpted evening dress</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Women</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹9,750</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Sculpted evening dress"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+          <article class="wd-product wd-col wd-hover-alt product-grid-item">
+            <div class="wd-product-wrapper product-wrapper">
+              <div class="wd-product-thumb product-element-top">
+                <a href="#" class="wd-product-img-link" tabindex="-1"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product1_1-430x490.jpg" alt="" loading="lazy" class="img-primary" /></a>
+                <div class="wd-product-img-hover hover-img"><img width="430" height="490" src="https://woodmart.xtemos.com/wp-content/uploads/2017/04/minimalism-product1-430x490.jpg" alt="" loading="lazy" /></div>
+                <div class="wd-buttons wd-pos-r-t"><button type="button" class="wd-action-btn btn-icon-only" aria-label="Compare">⇄</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Quick view">⌕</button><button type="button" class="wd-action-btn btn-icon-only" aria-label="Wishlist">♡</button></div>
+              </div>
+              <div class="wd-product-header"><h3 class="wd-entities-title"><a href="#">Editorial tote</a></h3></div>
+              <div class="wd-product-cats"><a href="#">Lifestyle</a></div>
+              <div class="wrap-price"><div class="swap-wrapp"><div class="swap-elements"><span class="price"><span class="amount">₹2,999</span></span><div class="wd-add-btn"><button type="button" class="add-to-cart-loop btn-add-cart" data-product="Editorial tote"><span class="cart-glyph" aria-hidden="true"></span><span class="wd-action-text">Add to cart</span></button></div></div></div></div>
+            </div>
+          </article>
+        </div>
+        <p class="load-more-wrap"><button type="button" class="btn btn-outline" id="load-more-btn" disabled title="Demo listing complete">Load more</button></p>
+      </section>
+
+      <section id="contact" class="hk-bottom-cta container">
+        <div class="hk-bottom-cta__inner">
+          <h2 class="hk-bottom-cta__title">Explore · Sell · Talk to the team</h2>
+          <div class="hk-bottom-cta__row">
+            <a class="btn btn-hk-primary btn-shop" href="#marketplace">Explore Marketplace</a>
+            <a class="btn btn-woodmart-black btn-shop" href="#sellers">Join as Seller</a>
+            <a class="btn btn-outline-dark btn-shop" href="mailto:hello@hanket.in">Contact HANKET</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="prefooter wd-prefooter" aria-labelledby="prefooter-newsletter">
+      <div class="container prefooter-inner">
+        <div class="prefooter-col prefooter-newsletter">
+          <div class="title-wrapper prefooter-title-group text-center wd-underline-colored">
+            <div class="title-subtitle prefooter-kicker">GET HANKET UPDATES</div>
+            <div class="liner-continer"><h4 id="prefooter-newsletter" class="woodmart-title-container prefooter-title">Newsletter</h4></div>
+          </div>
+          <div class="title-wrapper prefooter-intro-block text-center wd-title-empty">
+            <p class="title-after_title prefooter-desc prefooter-desc--newsletter">Marketplace launches, seller programs &amp; AI roadmap —<br />short reads for brands building on HANKET.</p>
+          </div>
+          <div class="wd-mc4wp-wrapper prefooter-form-wrap text-center">
+            <form class="newsletter-form mc4wp-form" id="newsletter-form" action="#" method="post">
+              <div class="mc4wp-form-fields">
+                <div class="wd-grid-f-stretch" style="--wd-gap: 10px">
+                  <div class="wd-col"><input type="email" name="EMAIL" required placeholder="Your email address" autocomplete="email" /></div>
+                  <div class="wd-col-auto"><input type="submit" value="Sign up" /></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="prefooter-col prefooter-social">
+          <div class="title-wrapper prefooter-title-group text-center wd-underline-colored vc_custom_read_news">
+            <div class="title-subtitle prefooter-kicker">COMMUNITY</div>
+            <div class="liner-continer"><h4 class="woodmart-title-container prefooter-title">Follow HANKET</h4></div>
+            <p class="title-after_title prefooter-desc prefooter-desc--social">Stories from sellers, drops &amp; behind the platform.</p>
+          </div>
+          <div class="wd-social-icons wd-style-bordered wd-size-default social-follow wd-shape-circle color-scheme-dark text-center" role="list">
+            <a href="#" class="wd-social-icon social-facebook social-icon" aria-label="Facebook" role="listitem"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="wd-social-icon social-twitter social-icon" aria-label="X" role="listitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="wd-social-icon social-instagram social-icon" aria-label="Instagram" role="listitem"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="wd-social-icon social-youtube social-icon" aria-label="YouTube" role="listitem"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer wd-footer footer-container color-scheme-dark">
+      <div class="container main-footer">
+        <aside class="footer-sidebar widget-area footer-widgets wd-grid-g">
+          <div class="footer-column footer-column-1 wd-grid-col">
+            <div class="wd-widget footer-widget woodmart-html-block footer-about">
+              <div class="footer-logo-wrap text-left"><a href="#" class="footer-logo hk-footer-wordmark">HANKET</a></div>
+              <div class="wd-text-block footer-text-block text-left"><p class="footer-text">India’s AI-powered fashion marketplace — Shoot to Sale for labels, beauty &amp; handloom. This site is a vision frontend demo.</p></div>
+              <ul class="wd-list wd-type-image text-left footer-contact-list" role="list">
+                <li><span class="wd-icon"><img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-cursor-dark.svg" alt="" width="14" height="14" loading="lazy" /></span><span class="wd-list-content list-content">Bengaluru · India</span></li>
+                <li><span class="wd-icon"><img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-phone-dark.svg" alt="" width="14" height="14" loading="lazy" /></span><span class="wd-list-content list-content"><a href="tel:+919000000000">+91 90000 00000</a></span></li>
+                <li><span class="wd-icon"><img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-envelope-dark.svg" alt="" width="14" height="14" loading="lazy" /></span><span class="wd-list-content list-content"><a href="mailto:hello@hanket.in">hello@hanket.in</a></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column footer-column-2 wd-grid-col">
+            <div class="wd-widget footer-widget woodmart-recent-posts"><h5 class="widget-title">From the journal</h5>
+              <ul class="woodmart-recent-posts-list recent-posts">
+                <li>
+                  <a class="recent-posts-thumbnail recent-thumb" href="#"><img width="75" height="65" src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-12-75x65.jpg" alt="" loading="lazy" /></a>
+                  <div class="recent-posts-info recent-body">
+                    <div class="wd-entities-title title"><a href="#">Seller spotlight: handloom at scale</a></div>
+                    <time class="recent-posts-time" datetime="2016-07-23">July 23, 2016</time>
+                    <a class="recent-posts-comment recent-comments" href="#">Read</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="recent-posts-thumbnail recent-thumb" href="#"><img width="75" height="65" src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-11-75x65.jpg" alt="" loading="lazy" /></a>
+                  <div class="recent-posts-info recent-body">
+                    <div class="wd-entities-title title"><a href="#">How AI catalogs speed launch</a></div>
+                    <time class="recent-posts-time" datetime="2016-07-23">July 23, 2016</time>
+                    <a class="recent-posts-comment recent-comments" href="#">Read</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column footer-column-3 wd-grid-col">
+            <div class="wd-widget widget_text"><h5 class="widget-title">Marketplace</h5><div class="textwidget"><ul class="menu footer-links">
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#marketplace">Featured</a></li>
+              <li><a href="#sellers">Sell on HANKET</a></li>
+            </ul></div></div>
+          </div>
+          <div class="footer-column footer-column-4 wd-grid-col">
+            <div class="wd-widget widget_text"><h5 class="widget-title">Policies</h5><div class="textwidget"><ul class="menu footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul></div></div>
+          </div>
+          <div class="footer-column footer-column-5 wd-grid-col">
+            <div class="wd-widget widget_text"><h5 class="widget-title">Quick links</h5><div class="textwidget"><ul class="menu footer-links">
+              <li><a href="#ai-platform">AI: Shoot to Sale</a></li>
+              <li><a href="mailto:hello@hanket.in">Partner enquiry</a></li>
+              <li><a href="#contact">Contact HANKET</a></li>
+            </ul></div></div>
+          </div>
+        </aside>
+      </div>
+      <div class="wd-copyrights copyrights-wrapper wd-layout-two-columns footer-copyrights">
+        <div class="container wd-grid-g copyrights-inner">
+          <div class="wd-col-start reset-last-child">
+            <small class="copyright-text">© 2026 <strong>HANKET</strong>. Marketplace vision demo — design language inspired by premium ecommerce layouts; product &amp; brand story is HANKET.</small>
+          </div>
+          <div class="wd-col-end reset-last-child">
+            <img loading="lazy" width="255" height="21" src="https://woodmart.xtemos.com/wp-content/uploads/2018/08/payment.png" class="payment-img attachment-medium" alt="Payment methods" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="hk-sticky-toolbar" aria-label="Sticky toolbar">
+      <a href="#marketplace" class="hk-toolbar-item">
+        <span class="hk-toolbar-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+        </span>
+        <span class="hk-toolbar-label">Shop</span>
+      </a>
+      <a href="#" class="hk-toolbar-item">
+        <span class="hk-toolbar-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+        </span>
+        <span class="hk-toolbar-label">Wishlist</span>
+      </a>
+      <a href="#" class="hk-toolbar-item">
+        <span class="hk-toolbar-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
+        </span>
+        <span class="hk-toolbar-label">Account</span>
+      </a>
+    </nav>
+
+    <div id="toast" class="toast toast--hk" role="status" aria-live="polite"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
